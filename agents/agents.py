@@ -64,20 +64,6 @@ def _mock_llm(system_prompt: str, user_message: str, agent_name: str) -> str:
             "RECOMMENDATION: Freeze transaction. Mandatory SAR via GoAML. "
             "Escalate ACC-AE-0077 to sanctions compliance team."
         ),
-        "FinCENExpert": (
-            "VERDICT: HIGH RISK – NON-COMPLIANT\n\n"
-            "Under FinCEN / BSA jurisdiction:\n"
-            "1. [FINCEN-SAR-§1020.320(a)(2)] Amount $47,500 with GNN anomaly score 0.91 "
-            "and confirmed cycle motif (CYCLE-A) constitutes probable money-laundering "
-            "structuring. SAR is mandatory. BREACH.\n"
-            "2. [FINCEN-CDD-2018-§1010.230] Receiver 'Apex Global Ventures LLC' "
-            "(ACC-US-3301) has no verified beneficial owner. Wire cannot legally complete. "
-            "BREACH.\n"
-            "Velocity spike (3× normal in 48 hrs) + new account (61 days) are additional "
-            "BSA red flags per FinCEN Advisory FIN-2023-A001.\n"
-            "RECOMMENDATION: Freeze transaction. File SAR with FinCEN BSA E-Filing "
-            "within 30 days (expedited given sanctions concern)."
-        ),
         "Auditor": (
             "AUDITOR FINAL RULING: TRANSACTION FROZEN\n\n"
             "Both jurisdictional experts are in agreement: this transaction is "
