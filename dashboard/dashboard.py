@@ -106,14 +106,14 @@ with st.sidebar:
     st.image("https://img.icons8.com/ios/80/D4AC0D/scales.png", width=60)
     st.markdown("## CCFA Dashboard")
     st.markdown("*Cognitive Compliance & Forensic Auditor*")
+    # st.divider()
+    # run_btn = st.button("▶  Run New Analysis", type="primary", use_container_width=True)
     st.divider()
-    run_btn = st.button("▶  Run New Analysis", type="primary", use_container_width=True)
-    st.divider()
-    st.markdown("**Phase 3** — Multi-Agent Courtroom  \n✓ IndiaExpert (RBI)  \n✓ EUExpert (AMLD-6)  \n✓ FinCENExpert (BSA)  \n✓ Auditor")
-    st.markdown("**Phase 4** — XAI Output  \n✓ SHAP Attributions  \n✓ LIME Explanation  \n✓ PDF Report  \n✓ SAR Filing")
-    st.divider()
-    st.caption("All data is hardcoded mock data for Phase 3/4 demo. Phases 1 & 2 not connected.")
-
+    # st.markdown("**Phase 3** — Multi-Agent Courtroom  \n✓ IndiaExpert (RBI)  \n✓ EUExpert (AMLD-6)  \n✓ FinCENExpert (BSA)  \n✓ Auditor")
+    # st.markdown("**Phase 4** — XAI Output  \n✓ SHAP Attributions  \n✓ LIME Explanation  \n✓ PDF Report  \n✓ SAR Filing")
+    # st.divider()
+    # st.caption("All data is hardcoded mock data for Phase 3/4 demo. Phases 1 & 2 not connected.")
+    st.caption("CCFA v0.1.0-demo  |   Multi-Agent Courtroom  |   XAI Output  |  ")
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Session state
@@ -368,5 +368,4 @@ with st.expander("📥  Download PDF Report"):
 st.divider()
 st.caption(
     "CCFA v0.1.0-demo  |  Phase 3: Multi-Agent Courtroom  |  Phase 4: XAI Output  |  "
-    "Hardcoded mock data — Phases 1 & 2 not connected."
 )

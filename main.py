@@ -57,7 +57,7 @@ def main():
     print(f"  Confidence      : {xai_report.model_confidence:.0%}")
     print(f"  Route           : {final_state.get('route', '—')}")
     print(f"  Frozen          : {final_state.get('transaction_frozen', False)}")
-    print(f"  Expert flags    : {final_state.get('expert_agreement_flags', 0)}/3")
+    print(f"  Expert flags    : {final_state.get('expert_agreement_flags', 0)}/2")
     print(f"  SARs filed      : {len(final_state.get('sar_filings', []))}")
     for s in final_state.get("sar_filings", []):
         print(f"    [{s['jurisdiction']}] {s['tracking_id']}")

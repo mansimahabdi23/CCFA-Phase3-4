@@ -149,7 +149,7 @@ REGULATORY_EXPERTS = {
 CONTEXT_PACKAGE = {
     "transaction":          TRANSACTION,
     "graph_analysis":       GRAPH_ANALYSIS,
-    "regulatory_experts":  REGULATORY_EXPERTS,
+    "regulatory_excerpts":  REGULATORY_EXPERTS,
     "phase_versions": {
         "phase1_rag":  "v1.4.2-mock",
         "phase2_gnn":  "v2.1.0-mock",
