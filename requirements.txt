@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────────
+# CCFA — Phase 3 & 4 Requirements
+# ─────────────────────────────────────────────────────────────────
+
+# Phase 3: Multi-Agent Courtroom
+langgraph>=0.1.0          # stateful multi-agent graph orchestration
+langchain>=0.2.0          # LLM tooling
+langchain-openai>=0.1.0   # OpenAI / GPT-4o integration (optional)
+langchain-google-genai>=1.0.0  # Gemini integration (optional)
+crewai>=0.28.0            # alternative agent framework (optional)
+openai>=1.30.0            # direct OpenAI SDK
+python-dotenv>=1.0.0      # load .env for API keys
+
+# Phase 4: XAI + Reporting
+shap>=0.44.0              # SHAP explainability
+lime>=0.2.0.1             # LIME explainability
+reportlab>=4.1.0          # PDF generation
+streamlit>=1.35.0         # interactive dashboard
+plotly>=5.20.0            # charts in dashboard
+pandas>=2.2.0             # data handling
+
+# Vector DB (Phase 1 integration — not required for standalone Phase 3/4)
+# pinecone-client>=3.0.0
+# pymilvus>=2.4.0
+
+# Graph DB (Phase 2 integration — not required for standalone Phase 3/4)
+# neo4j>=5.20.0
+
+# GNN (Phase 2 integration)
+# torch>=2.3.0
+# torch-geometric>=2.5.0
+# dgl>=2.0.0
+
+# Observability
+langsmith>=0.1.70         # LangSmith tracing (optional)
+traceloop-sdk>=0.15.0     # Traceloop observability (optional)

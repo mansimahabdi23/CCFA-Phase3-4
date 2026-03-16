@@ -1,0 +1,27 @@
+
+ccfa/
+│
+├── main.py                        ← Entry point: runs Phase 3 + 4 pipeline
+├── requirements.txt               ← All dependencies
+│
+├── data/
+│   └── context_package.py         ← Hardcoded mock data (transaction, GNN results, regulatory excerpts)
+│
+├── tools/
+│   └── tools.py                   ← 4 mock tools: neo4j_query, pinecone_search, account_lookup, sar_filing
+│
+├── agents/
+│   ├── agents.py                  ← IndiaExpert, EUExpert, Auditor agent classes
+│   └── orchestrator.py            ← LangGraph StateGraph: india → eu → auditor → freeze/human_review
+│
+├── xai/
+│   └── xai_engine.py              ← SHAP attributions + LIME narrative generator
+│
+├── reports/
+│   └── report_generator.py        ← ReportLab PDF generator (6-section audit report)
+│
+├── dashboard/
+│   └── dashboard.py               ← Streamlit dashboard (Phase 4 UI)
+│
+└── output_reports/                ← Auto-created — generated PDFs land here
+    └── CCFA_Report_TXN-...pdf
