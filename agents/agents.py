@@ -111,8 +111,8 @@ class BaseAgent:
         return (
             f"Transaction: {json.dumps(state['transaction'], indent=2)}\n\n"
             f"Graph Analysis: {json.dumps(state['graph_analysis'], indent=2)}\n\n"
-            f"Regulatory Excerpts for {self.jurisdiction}: "
-            f"{json.dumps(state['regulatory_excerpts'].get(self.jurisdiction, {}), indent=2)}"
+            f"Regulatory Experts for {self.jurisdiction}: "
+            f"{json.dumps(state['regulatory_experts'].get(self.jurisdiction, {}), indent=2)}"
         )
 
     def run(self, state: dict) -> dict:

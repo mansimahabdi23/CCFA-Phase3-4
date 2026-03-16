@@ -205,7 +205,7 @@ def run_pipeline(context_package: dict | None = None) -> CCFAState:
     initial_state: CCFAState = {
         "transaction":          pkg["transaction"],
         "graph_analysis":       pkg["graph_analysis"],
-        "regulatory_excerpts":  pkg["regulatory_excerpts"],
+        "regulatory_experts":   pkg["regulatory_experts"],
         "run_id":               str(uuid.uuid4()),
         "started_at":           datetime.now(timezone.utc).isoformat(),
     }
