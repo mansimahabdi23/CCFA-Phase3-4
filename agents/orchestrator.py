@@ -14,9 +14,6 @@ Graph topology:
   eu_expert_node
      │
      ▼
-  fincen_expert_node
-     │
-     ▼
   auditor_node  ─── (all agree) ──▶ freeze_and_report
      │                                     │
      └── (disagreement) ──▶ human_review ──┘
